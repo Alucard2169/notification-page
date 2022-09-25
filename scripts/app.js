@@ -1,4 +1,4 @@
-const unReadList = document.querySelectorAll('#Read');
+const unReadList = document.querySelectorAll('.unRead');
 const count = document.getElementById('count');
 const readButton = document.getElementById('read');
 
