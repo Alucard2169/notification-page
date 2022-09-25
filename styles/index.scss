@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    padding: .8rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .left {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        .countBox {
+            margin-left: .5rem;
+            background-color: darkblue;
+            padding: .1rem .6rem;
+            color: white;
+            border-radius: 5px;
+        }
+    }
+
+    .right {
+        button {
+            border: none;
+            font-size: .8rem;
+            cursor: pointer;
+            color: gray;
+        }
+    }
+}
+
+main {
+    margin: 3rem auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+
+    .notifi {
+        padding: 1.2rem;
+        display: flex;
+        align-items: center;
+
+        img {
+            max-width: 2.5rem;
+            max-height: 2.5rem;
+            margin-right: 1rem;
+        }
+
+        .mainNot {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text {
+            p {
+                font-size: .8rem;
+                color: rgb(86, 86, 86);
+
+                strong {
+                    color: black;
+                    margin-right: .2rem;
+                }
+
+                .special {
+                    font-weight: bold;
+                    margin-left: .3rem;
+
+                }
+
+                .grB {
+                    color: blue;
+                    font-size: .8rem;
+                }
+
+                .mark {
+                    display: inline-block;
+                    width: .5rem;
+                    height: .5rem;
+                    background-color: none;
+                    margin-left: .2rem;
+                    border-radius: 100px;
+                }
+            }
+
+
+        }
+
+        span {
+            margin-top: .5rem;
+            font-size: .7rem;
+            color: gray;
+        }
+
+        .commentImg {
+            width: 2rem;
+            margin-left: auto;
+        }
+    }
+
+    .messS {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .upper {
+            display: flex;
+        }
+
+        .message {
+            width: 80%;
+            margin-top: .8rem;
+            margin-left: auto;
+            font-size: .8rem;
+            padding: .8rem;
+            color: rgb(86, 86, 86);
+
+        }
+    }
+
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+
+    p {
+        font-size: .8rem;
+
+        a {
+            color: red;
+            text-decoration: none;
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+
+        header,
+        main,
+        footer {
+            width: 50%;
+        }
+
+        main {
+            .notifi {
+                .mainNot>.text>p {
+                    font-size: .9rem;
+                }
+            }
+
+            .messS {
+
+
+                .message {
+                    border: 1px gray solid;
+                    font-size: .9rem;
+                    line-height: 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.unRead {
+    background-color: rgb(200, 239, 255);
+    border-radius: 10px;
+
+    .mainNot {
+        .text {
+            .mark {
+                background-color: red;
+            }
+        }
+    }
+}

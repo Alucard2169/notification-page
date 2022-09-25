@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Page | Frontend Mentor | Alucard2169</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1>Notifications</h1>
+            <span id="count" class="countBox">3</span>
+        </div>
+        <div class="right">
+            <button id="read">Mark all as read</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="notifi unRead" id="unRead">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="mark webber pfp">
+            <div class="mainNot">
+                <div class="text">
+                    <p><strong>Mark Webber</strong>
+                        reacted to your recent post <span class="special">My first tournament today!</span>
+                        <span class="mark"></span>
+                    </p>
+                    <span>1m ago</span>
+            </div>
+            </div>
+        </div>
+        <div class="notifi unRead" id="unRead">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="angela gray pfp">
+            <div class="mainNot">
+                <div class="text">
+                    <p><strong>Angela Gray</strong>
+                        followed you
+                        <span class="mark"></span>
+                    </p>
+                </div>
+                <span>5m ago</span>
+            </div>
+        </div>
+        <div class="notifi unRead" id="unRead">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="jacob thompson pfp">
+           <div class="mainNot">
+            <div class="text">
+                <p><strong>Jacob Thompson</strong>
+                    has joined your group
+                    <span class="special grB">Chess Club</span>
+                    <span class="mark"></span>
+                </p>
+            </div>
+            <span>1 day ago</span>
+           </div>
+        </div>
+        <div class="notifi messS">
+           <div class="upper">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanuddin pfp">
+           <div class="mainNot">
+            <div class="text">
+                <p><strong>Rizky Hasanuddin</strong>
+                    sent you a private message
+            
+                </p>
+            </div>
+            <span>5 days ago</span>
+           </div>
+           </div>
+            <p class="message">
+                Hello thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of
+                fun and improving my game.
+            </p>
+        </div>
+        <div class="notifi">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="kimberly smith pfp">
+          <div class="mainNot">
+            <div class="text">
+                <p><strong>Kimberly Smith</strong>
+                    commented on your picture
+            
+                </p>
+            </div>
+            <span>1 week ago</span>
+          </div>
+            <img src="./assets/images/image-chess.webp" class="commentImg" alt="">
+        </div>
+        <div class="notifi">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="nathan peterson pfp">
+            <div class="mainNot">
+                <div class="text">
+                    <p><strong>Nathan Peterson</strong>
+                        reacted to your recent post <span class="special">5 end-game strategies to increase your win rate</span>
+                
+                    </p>
+                </div>
+                <span>2 weeks ago</span>
+            </div>
+        </div>
+        <div class="notifi">
+            <img src="./assets/images/avatar-anna-kim.webp" alt="anna kim pfp">
+            <div class="mainNot">
+                <div class="text">
+                    <p><strong>Anna Kim</strong>
+                        left the group <span class="special grB">Chess club</span>
+                
+                    </p>
+                </div>
+                <span>2 weeks ago</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Frontend Mentor | <a href="https://github.com/Alucard2169" target="_blank">Alucard 2169</a></p>
+    </footer>
+</body>
+</html>
