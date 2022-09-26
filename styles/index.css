@@ -67,6 +67,7 @@ header .right button {
   font-size: .8rem;
   cursor: pointer;
   color: gray;
+  background-color: transparent;
 }
 
 main {
